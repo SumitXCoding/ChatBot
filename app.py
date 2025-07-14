@@ -15,8 +15,8 @@ def my_output(query):
 
 #### UI Development using streamlit 
 
-st.set_page_config(page_title="Sync_pro_bot")
-st.header("Sync_pro_bot") 
+st.set_page_config(page_title="chatbot")
+st.header("Chat_Bot") 
 input = st.text_input("Input " , key = "input")  
 submit = st.button("Ask your query") 
 
@@ -24,4 +24,3 @@ if submit :
     response = my_output(input) 
     st.subheader("The Response is=")
     st.write(response)
-    
